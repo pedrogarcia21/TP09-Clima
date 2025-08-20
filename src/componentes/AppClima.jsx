@@ -150,10 +150,16 @@ function AppClima() {
         </button>
       </form>
       {error && <div className="error">{error}</div>}
-      <ClimaActual datosClima={climaActual} />
-      <PronosticoHorario datosPronostico={pronosticoHorario} />
-      <PronosticoDiario datosPronostico={pronosticoDiario} />
-      <ClimaCiudades ciudades={climaCiudades} />
+      <div className="layout-principal">
+        <div className="columna-izq">
+          <ClimaActual datosClima={climaActual} />
+          <ClimaCiudades ciudades={climaCiudades} />
+        </div>
+        <div className="columna-der">
+          <PronosticoHorario datosPronostico={pronosticoHorario} />
+          <PronosticoDiario datosPronostico={pronosticoDiario} />
+        </div>
+      </div>
     </div>
   );
 }
