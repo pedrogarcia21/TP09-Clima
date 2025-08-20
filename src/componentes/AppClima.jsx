@@ -15,7 +15,6 @@ const CIUDADES_GRANDES = [
 function AppClima() {
   const { unidad, toggleUnidad, tema, toggleTema, cacheClima, guardarClima } = useClima();
 
-  // Cambiar la clase del body según el tema
   React.useEffect(() => {
     document.body.classList.remove('tema-oscuro', 'tema-claro');
     document.body.classList.add(`tema-${tema}`);

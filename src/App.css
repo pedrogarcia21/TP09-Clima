@@ -3,7 +3,7 @@
   flex-direction: row;
   gap: 2.5rem;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .columna-izq {
   display: flex;
@@ -20,6 +20,7 @@
   min-width: 500px;
   max-width: 600px;
   flex: 2 1 500px;
+  align-items: center;
 }
 
 body {
